@@ -16,7 +16,6 @@ export const Thing = () => {
   return (
     <div>
       <p>private 1 {process.env.NEXT_PUBLIC_PRIVATE}</p>
-      <p>private 2 {process.env.PRIVATE}</p>
       <p>thing {user}</p>
       {list.map((l) => (
         <p key={l.id}>
