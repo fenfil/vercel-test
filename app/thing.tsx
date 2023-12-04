@@ -3,7 +3,6 @@
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import { RootState } from "../redux/store";
 import { addTodo } from "../redux/features/todo";
-import styled from "@emotion/styled";
 
 export const Thing = () => {
   const dispatch = useDispatch();
@@ -11,7 +10,6 @@ export const Thing = () => {
     (s: RootState) => ({ user: s.todoReducer.user, list: s.todoReducer.list }),
     shallowEqual
   );
-  console.log("here thing", user, list);
 
   return (
     <div>
